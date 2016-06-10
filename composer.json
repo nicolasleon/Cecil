@@ -1,13 +1,10 @@
 {
   "name": "narno/phpoole",
   "description": "PHPoole is a light and easy static website generator written in PHP.",
-  "version" : "1.0.0-dev",
   "type": "project",
-  "keywords": [
-    "website", "static", "generator"
-  ],
+  "keywords": ["website", "static", "generator"],
   "license": "MIT",
-  "homepage": "http://phpoole.narno.org",
+  "homepage": "https://github.com/Narno/PHPoole/",
   "authors": [
     {
       "name": "Arnaud Ligny",
@@ -16,19 +13,22 @@
       "role": "Developer"
     }
   ],
-  "bin": [
-      "phpoole.php"
-  ],
-  "minimum-stability": "dev",
-  "prefer-stable": true,
   "require": {
-    "php":">=5.4",
-    "zendframework/zend-console": "2.*",
-    "zendframework/zend-eventmanager": "2.*",
+    "php": ">=5.4",
+    "michelf/php-markdown": "1.*",
     "twig/twig": "1.*",
-    "michelf/php-markdown": "1.*"
+    "zendframework/zend-console": "2.*",
+    "zendframework/zend-eventmanager": "2.*"
   },
   "require-dev": {
     "phpunit/phpunit": "4.8.*"
+  },
+  "bin": ["phpoole.php"],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
   }
 }
